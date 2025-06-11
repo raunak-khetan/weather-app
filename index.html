@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weather app</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts for Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar change-mode">
+    
+    <!-- Left section: Search & Location -->
+    <div class="left-section">
+
+      <!-- Search Input + Icon -->
+      <div class="search-container">
+        <input type="text" placeholder="Search City" class="search-bar" >
+        <img src="icons/search.svg" class="search-icon" />
+      </div>
+
+      <!-- Current Location Button + Icon -->
+      <div class="location" id="get-location">
+        <button class="location-btn">Current Location</button>
+        <img src="icons/crosshair.svg" class="location-icon" />
+      </div>
+    </div>
+
+    <!-- Right section: Theme & Unit Toggle, Hamburger for Mobile -->
+    <div class="right-section">
+      <div class="display-mode">
+        <button class="mode">Dark Mode</button>
+        <button class="convert">Convert to &deg;F</button>
+      </div>
+      <img src="icons/list.svg" class="hamburger">
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="mainbar change-mode">
+
+    <!-- Dropdown Menu for Mobile View -->
+    <div class="menu">
+      <button class="mode">Dark Mode</button>
+      <button class="convert">Convert to &deg;F</button>
+    </div>
+
+    <!-- Weather Display Area -->
+    <div class="main-content change-mode">
+      <!-- Content will be dynamically inserted via JavaScript -->
+    </div>
+
+  </main>
+
+  <!-- Link to JavaScript logic -->
+  <script src="script.js"></script>
+
+</body>
+</html>
